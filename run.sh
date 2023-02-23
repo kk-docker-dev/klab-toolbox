@@ -10,6 +10,7 @@ docker run \
   --detach \
   -h toolbox \
   -e DISPLAY=:0 \
+  --shm-size="4gb" \
   --name klab-toolbox \
   -v $HOME:/data \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
