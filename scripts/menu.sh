@@ -1,6 +1,7 @@
 #!/bin/bash
 
 toolset=(
+  "eog"
   "firefox"
   "gedit"
   "giggle"
@@ -12,6 +13,7 @@ toolset=(
   "meld"
   "nautilus"
   "nemo"
+  "shotwell"
   "synapse"
   "terminator"
   "tilda"
