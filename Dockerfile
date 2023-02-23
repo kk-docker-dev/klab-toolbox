@@ -35,10 +35,10 @@ ENV LC_ALL en_US.UTF-8
 # Install linux packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+            adwaita-icon-theme-full yaru-theme-gtk \
             cscope curl dbus-x11 file git glances global sqlite3 sudo tig tree sqlite3 universal-ctags vim wget \
             eog evince file-roller firefox gedit giggle gitg gitk gnome-system-monitor gnome-terminal gthumb \
             meld nautilus nemo synapse terminator tilda tilix xdiskusage xfe xterm
-RUN apt-get install -y --no-install-recommends papirus-icon-theme
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Copy startup scripts
