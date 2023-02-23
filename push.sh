@@ -11,5 +11,5 @@ fi
 set -x
 docker tag kribakarans/toolbox:latest kribakarans/toolbox:$ARCH
 sudo docker push kribakarans/toolbox:$ARCH
-sudo docker manifest create --amend kribakarans/toolbox:latest kribakarans/toolbox:$ARCH kribakarans/toolbox:$ARCH
+sudo docker manifest create --amend kribakarans/toolbox:latest kribakarans/toolbox:amd64 kribakarans/toolbox:arm64
 sudo docker manifest push kribakarans/toolbox:latest
