@@ -1,1 +1,1 @@
-docker build -t kribakarans/toolbox .
+docker build -t klab-toolbox .

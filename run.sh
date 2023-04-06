@@ -23,4 +23,4 @@ docker run \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v $CACHE_PATH:$USER_HOME/.cache \
   -v $CONFIG_PATH:$USER_HOME/.config \
-  kribakarans/toolbox
+  klab-toolbox

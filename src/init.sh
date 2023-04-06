@@ -1,7 +1,8 @@
 #!/bin/bash
 
+# Keep alive
 while true; do
-	sleep 1
+	sleep 3
 done
 
-exit $?
+exit 0
