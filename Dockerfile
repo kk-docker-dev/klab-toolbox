@@ -26,9 +26,9 @@ RUN install -D /klab/menu.sh /usr/local/bin/menu
 
 # Create local user
 ARG USER=klab
-RUN useradd -m ${USER} -s /bin/bash
-RUN usermod -aG sudo ${USER}
-RUN echo "${USER} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${USER} && \
+RUN useradd -m ${USER} -s /bin/bash && \
+    usermod -aG sudo ${USER} && \
+    echo "${USER} ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/${USER} && \
     chmod 0440 /etc/sudoers.d/${USER}
 
 USER ${USER}
